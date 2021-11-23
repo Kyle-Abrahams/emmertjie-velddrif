@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/css/main.9af053f8.chunk.css",
-    "main.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/main.1a481286.chunk.js",
-    "main.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/main.1a481286.chunk.js.map",
-    "runtime-main.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/runtime-main.fd722cf3.js",
-    "runtime-main.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/runtime-main.fd722cf3.js.map",
-    "static/js/2.6c4fb8cd.chunk.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/2.6c4fb8cd.chunk.js",
-    "static/js/2.6c4fb8cd.chunk.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/2.6c4fb8cd.chunk.js.map",
-    "index.html": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/index.html",
-    "static/css/main.9af053f8.chunk.css.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/css/main.9af053f8.chunk.css.map",
-    "static/js/2.6c4fb8cd.chunk.js.LICENSE.txt": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/js/2.6c4fb8cd.chunk.js.LICENSE.txt",
-    "static/media/Emmertjie_location.27acf03d.PNG": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/media/Emmertjie_location.27acf03d.PNG",
-    "static/media/index.css": "/Kyle-Abrahams.github.io/emmertjie-velddrif/deploy,/static/media/IMG-20211122-WA0205.ab8e89a8.jpg"
+    "main.css": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/css/main.a26c9148.chunk.css",
+    "main.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/main.1a481286.chunk.js",
+    "main.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/main.1a481286.chunk.js.map",
+    "runtime-main.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/runtime-main.dd60295b.js",
+    "runtime-main.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/runtime-main.dd60295b.js.map",
+    "static/js/2.6c4fb8cd.chunk.js": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/2.6c4fb8cd.chunk.js",
+    "static/js/2.6c4fb8cd.chunk.js.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/2.6c4fb8cd.chunk.js.map",
+    "index.html": "/Kyle-Abrahams.github.io/emmertjie-velddrif/index.html",
+    "static/css/main.a26c9148.chunk.css.map": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/css/main.a26c9148.chunk.css.map",
+    "static/js/2.6c4fb8cd.chunk.js.LICENSE.txt": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/js/2.6c4fb8cd.chunk.js.LICENSE.txt",
+    "static/media/Emmertjie_location.27acf03d.PNG": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/media/Emmertjie_location.27acf03d.PNG",
+    "static/media/index.css": "/Kyle-Abrahams.github.io/emmertjie-velddrif/static/media/IMG-20211122-WA0205.ab8e89a8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd722cf3.js",
+    "static/js/runtime-main.dd60295b.js",
     "static/js/2.6c4fb8cd.chunk.js",
-    "static/css/main.9af053f8.chunk.css",
+    "static/css/main.a26c9148.chunk.css",
     "static/js/main.1a481286.chunk.js"
   ]
 }
