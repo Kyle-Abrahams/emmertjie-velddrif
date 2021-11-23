@@ -1,13 +1,295 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+:root {
+  --pink-color: #efafb8;
+  --green-color: #afedbc;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/IMG-20211122-WA0205.jpg") center no-repeat fixed;
+  background-size: cover;
+  object-fit: contain;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto 5rem auto;
+  padding: 2rem 0 1rem 0;
+  justify-content: space-between;
+  border-bottom: 3px solid gray;
+}
+
+.navbar h1 {
+  font-size: 3em;
+  color: var(--pink-color);
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 1.6rem;
+  font-size: 0.8em;
+}
+
+.navbar .nav-item a:hover {
+  color: var(--pink-color);
+}
+
+.menu-container {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.section-header {
+  font-size: 40px;
+  color: var(--pink-color);
+  position: relative;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
+.menu-names-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  color: var(--green-color);
+}
+
+.menu-name {
+  margin: 2rem 2rem 2rem 0;
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.menu-name:hover {
+  color: var(--green-color);
+  transition: 0.5s ease-in-out;
+}
+
+.menu-name::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-name:hover::after {
+  width: 100%;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  min-height: 550px;
+}
+
+.menu-item {
+  display: flex;
+  text-align: start;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu-item__name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.menu-item__price {
+  position: absolute;
+  right: 0;
+  color: var(--pink-color);
+}
+
+.menu-text {
+  font-size: 25px;
+  width: 30%;
+  min-width: 300px;
+  margin: 2rem auto 4rem auto;
+}
+
+.menu-text span {
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.story-container {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 10rem auto;
+}
+
+.story-container .sub-header {
+  margin: 3rem 0 1rem 0;
+  font-size: 30px;
+}
+
+.story-container .story-text {
+  width: 50%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.story-container .story-text span {
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-container .section-header {
+  margin-bottom: 3rem;
+}
+
+.contact-text {
+  font-size: 25px;
+}
+.info {
+  font-size: 30px;
+  color: var(--green-color);
+  margin-bottom: 2rem;
+}
+
+.operating-info {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.operating-info .contact-text {
+  margin-bottom: 2rem;
+}
+
+.operating-info ul {
+  list-style: none;
+}
+
+.operating-hours {
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+}
+
+.operating-hours span {
+  margin-left: 1rem;
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.location {
+  align-self: center;
+}
+
+@media (max-width: 1300px) {
+  .navbar h1 {
+    font-size: 2em;
+  }
+
+  .navbar .nav-item a {
+    font-size: 15px;
+  }
+
+  .section-header {
+    font-size: 25px;
+  }
+
+  .menu-name {
+    font-size: 15px;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: initial;
+  }
+
+  .menu-item {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu-item__name {
+    font-size: 15px;
+  }
+  .menu-item__desciption {
+    font-size: 15px;
+  }
+  .menu-item__price {
+    font-size: 20px;
+  }
+
+  .menu-text {
+    font-size: 20px;
+  }
+
+  .story-container .sub-header {
+    font-size: 20px;
+  }
+
+  .story-container .story-text {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contact-container .contact-text {
+    font-size: 20px;
+  }
+
+  .contact-container .info {
+    font-size: 25px;
+  }
+
+  .operating-info {
+    flex-direction: column;
+  }
 }

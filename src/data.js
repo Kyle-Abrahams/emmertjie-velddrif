@@ -1,0 +1,308 @@
+import React from "react";
+
+const data = [
+  {
+    id: 1,
+    name: "Coffee (Nescafe)",
+    price: "R15.00",
+    catagory: "drinks",
+  },
+  {
+    id: 2,
+    name: "Filter Coffee (Plunger)",
+    price: "R20.00",
+    catagory: "drinks",
+  },
+  {
+    id: 3,
+    name: "Cappuccino with foam",
+    price: "R25.00",
+    catagory: "drinks",
+  },
+  {
+    id: 4,
+    name: "Cappuccino with cream",
+    price: "R30.00",
+    catagory: "drinks",
+  },
+  {
+    id: 5,
+    name: "Red Cappuccino with foam",
+    price: "R25.00",
+    catagory: "drinks",
+  },
+  {
+    id: 6,
+    name: "Red Cappuccino with cream",
+    price: "R30.00",
+    catagory: "drinks",
+  },
+  {
+    id: 7,
+    name: "Espresso",
+    price: "R15.00",
+    catagory: "drinks",
+  },
+  {
+    id: 8,
+    name: "Café Late",
+    price: "R30.00",
+    catagory: "drinks",
+  },
+  {
+    id: 9,
+    name: "Ice Coffee",
+    price: "R35.00",
+    catagory: "drinks",
+  },
+  {
+    id: 10,
+    name: "Hot Chocolate",
+    price: "R30.00",
+    catagory: "drinks",
+  },
+  {
+    id: 11,
+    name: "Milo",
+    price: "R30.00",
+    catagory: "drinks",
+  },
+  {
+    id: 12,
+    name: "Tea (Ceylon, Earl grey, Rooibos) ",
+    price: "R15.00",
+    catagory: "drinks",
+  },
+  {
+    id: 13,
+    name: "Ice Tea",
+    price: "R22.00",
+    catagory: "drinks",
+  },
+  {
+    id: 14,
+    name: "Milkshake (Strawberry, Chocolate, Lime, Bubblegum) ",
+    price: "R36.00",
+    catagory: "drinks",
+  },
+  {
+    id: 15,
+    name: "Juice (Cabby) ",
+    price: "R25.00",
+    catagory: "drinks",
+  },
+  {
+    id: 16,
+    name: "Appletizer or Grapetizer",
+    price: "R25.00",
+    catagory: "drinks",
+  },
+  {
+    id: 17,
+    name: "Sodas",
+    price: "R20.00",
+    catagory: "drinks",
+  },
+  {
+    id: 18,
+    name: "Mineral water/ Sparkling water",
+    price: "R15.00",
+    catagory: "drinks",
+  },
+  {
+    id: 19,
+    name: "Mini Emmertjie Breakfast",
+    description: "(2 Bacon, 1 Egg, Tomato & 1 Toast)",
+    price: "R35.00",
+    catagory: "breakfast",
+  },
+  {
+    id: 20,
+    name: "Emmertjie Breakfast",
+    description: "(Bacon, Eggs, Boerewors or Cheese Griller, Tomato & Toast)",
+    price: "R65.00",
+    catagory: "breakfast",
+  },
+  {
+    id: 21,
+    name: "Big Bang Theory",
+    description:
+      "(Bacon, Eggs, Boerewors or Cheese Griller, Tomato, Mushrooms, Chips & Toast)",
+    price: "R90.00",
+    catagory: "breakfast",
+  },
+  {
+    id: 22,
+    name: "Banting Breakfast",
+    description:
+      "(Bacon, Eggs, Boerewors or Cheese Griller,Tomato & Mushrooms)",
+    price: "R65.00",
+    catagory: "breakfast",
+  },
+  {
+    id: 23,
+    name: "Omelet",
+    description: "(Ham, Mushrooms, Tomato, Cheese & Toast)",
+    price: "R70.00",
+    catagory: "breakfast",
+  },
+  {
+    id: 24,
+    name: "Cheese",
+    price: "R40.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 25,
+    name: "Cheese & Tomato ",
+    price: "R45.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 26,
+    name: "Cheese, Tomato & Ham ",
+    price: "R50.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 27,
+    name: "Chicken & Mayo ",
+    price: "R55.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 28,
+    name: "Chicken, Mayo & Cheese",
+    price: "R60.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 29,
+    name: "Tuna & Mayo",
+    price: "R55.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 30,
+    name: "Bacon & Egg",
+    price: "R55.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 31,
+    name: "Bacon, Egg & Cheese",
+    price: "R60.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 32,
+    name: "A Bowl of Chips",
+    price: "R30.00",
+    catagory: "sandwiches",
+  },
+  {
+    id: 33,
+    name: "Tuna Salad ",
+    price: "R75.00",
+    catagory: "salads",
+  },
+  {
+    id: 34,
+    name: "Chicken Salad ",
+    price: "R85.00",
+    description: "(Grilled Chicken Fillet with grilled onions & peppers)",
+    catagory: "salads",
+  },
+  {
+    id: 35,
+    name: "The Irma Stern",
+    price: "R75.00",
+    description: "(Open Sandwich with chicken, mayo, peaches and green salad)",
+    catagory: "light meals",
+  },
+  {
+    id: 36,
+    name: "The Da Vinci",
+    price: "R75.00",
+    description:
+      "(Open Sandwich with tuna, mayo, peppers, cheese, apple and green salad)",
+    catagory: "light meals",
+  },
+  {
+    id: 37,
+    name: "The Michaelangelo Wrap",
+    price: "R75.00",
+    description:
+      "(Chicken strips, wrapped in lettuce, tomatoes, cucumber, peppers, pineapple with mayo, sweet chili sauce & Chips",
+    catagory: "light meals",
+  },
+  {
+    id: 38,
+    name: "The Raphael Plate",
+    price: "R85.00",
+    description:
+      "(Grilled Chicken fillet with grilled onions, peppers,Mushrooms, pineapple, sweet chili sauce and a Cheese Griller with Chips)",
+    catagory: "light meals",
+  },
+  {
+    id: 39,
+    name: "Hamburger",
+    price: "R75.00",
+    description:
+      "(Beef Pattie with grilled onions, peppers, relish and cheese with Chips)",
+    catagory: "light meals",
+  },
+  {
+    id: 40,
+    name: "Double Hamburger",
+    price: "R95.00",
+    description:
+      "(2 Beef patties with grilled onions, peppers, relish and cheese with Chips)",
+    catagory: "light meals",
+  },
+  {
+    id: 41,
+    name: "Chicken Burger",
+    price: "R85.00",
+    description:
+      "(Grilled Chicken fillet with grilled onions, peppers,mushrooms, pineapple, sweet chili sauce with Chips)",
+    catagory: "light meals",
+  },
+  {
+    id: 42,
+    name: "Hotdogs",
+    price: "R60.00",
+    description: "(Cheese griller with grilled onions, peppers with Chips)",
+    catagory: "light meals",
+  },
+  {
+    id: 43,
+    name: "Chicken Schnitzel ",
+    price: "R90.00",
+    description: "(Served with chips and mushroom cheddar melt sauce)",
+    catagory: "light meals",
+  },
+  {
+    id: 44,
+    name: "Chicken Strips",
+    price: "R75.00",
+    description: "(Served with chips and mushroom cheddar melt sauce)",
+    catagory: "light meals",
+  },
+  {
+    id: 45,
+    name: "Ice Cream",
+    price: "R35.00",
+    description: "(bowl of ice cream and chocolate sauce)",
+    catagory: "desert",
+  },
+  {
+    id: 46,
+    name: "Cake of the day",
+    price: "R40.00",
+    description: "Ask the waiter for variety…. or it’s written on board",
+    catagory: "desert",
+  },
+];
+
+export default data;
