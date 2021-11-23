@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "../data";
 
 const Menu = () => {
-  const [catagories, setCatagories] = useState("sandwiches");
+  const [catagories, setCatagories] = useState("drinks");
   return (
     <section className="menu-container" id="menu">
       <h2 className="section-header">Menu</h2>
